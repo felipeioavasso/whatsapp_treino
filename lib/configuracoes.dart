@@ -161,6 +161,7 @@ class _ConfiguracoesState extends State<Configuracoes> {
     dynamic dados = await snapshot.data();
       _controllerNome.text = dados['nome'];
 
+    // de Map para Objeto
     if (dados['urlImagem'] != null) {
       setState(() {
         _urlImagemRecuperada = dados['urlImagem'];
